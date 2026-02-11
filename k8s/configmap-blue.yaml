@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-content-blue
+  namespace: bluegreen
+data:
+  index.html: |
+    <html>
+      <head><title>Blue</title></head>
+      <body style="font-family: Arial;">
+        <h1>Blue Version ✅</h1>
+        <p>Deployed via Kubernetes Blue-Green strategy.</p>
+      </body>
+    </html>

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-content-green
+  namespace: bluegreen
+data:
+  index.html: |
+    <html>
+      <head><title>Green</title></head>
+      <body style="font-family: Arial;">
+        <h1>Green Version ✅</h1>
+        <p>Traffic switched using Service selector.</p>
+      </body>
+    </html>
